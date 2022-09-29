@@ -229,14 +229,14 @@ section {
         font-size: 2.2rem;
     }
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         letter-spacing: -0.5px;
     }
     p {
         font-size: 1.2rem;
     }
     section {
-        margin: 0 auto 8rem;
+        margin: 0 auto 4.5rem;
     }
     .clipboard__header,
     .clipboard__main {
@@ -255,24 +255,94 @@ section {
     h2 + p {
         font-size: 1.05rem;
     }
+    .snippets {
+        margin-bottom: 15rem;
+    }
     .snippets__heading,
     .snippets__description {
         width: 670px;
         margin-left: auto;
         margin-right: auto;
     }
+    .snippets__description {
+        margin-bottom: 10rem;
+    }
     .snippets__features {
         display: flex;
+        position: relative;
     }
     .snippets__img img {
         position: absolute;
-        width: 100px;
+        height: 600px;
+        left: 23%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: unset;
     }
     .features__descriptions {
         text-align: left;
+        width: 350px;
+        margin-left: -35%;
+    }
+    .features_description {
+        margin-bottom: 3.2rem;
     }
     h3 + p {
         font-size: 1rem;
+    }
+    .access__description {
+        width: 670px;
+        margin: 0 auto 6rem;
+    }
+    .access__img img {
+        width: unset;
+    }
+    .workflow__features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: baseline;
+        gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .workflow__features > div {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .os__description {
+        width: 670px;
+        margin: 0 auto 3rem;
+    }
+    .clipboard__footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        align-items: center;
+        padding: 2.5rem 5rem;
+        position: relative;
+    }
+    .clipboard__footer .clipboard__logo,
+    .site__links {
+        margin: unset;
+    }
+    .site__links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem 2.3rem;
+        text-align: left;
+    }
+    .site__link {
+        margin: unset;
+    }
+    .privacy__policy {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .install__guide {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .social__links {
+        position: absolute;
+        right: 5rem;
+        width: 120px;
     }
 }
 
@@ -283,4 +353,28 @@ section {
     .clipboard__header .clipboard__logo {
         margin: -3rem auto 5rem;
     }
+    section:not(.snippets) {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .partners__logo {
+        display: flex;
+        flex-direction: row;
+    }
+    .clipboard__footer {
+        grid-template-columns: 1.5fr 3fr 2fr;
+        padding: 2.5rem 8rem;
+    }
+    .social__links {
+        right: 8rem;
+    }
+}
+
+/* Active States */
+/* TODO - Configure the social icon hover state */
+.site__link:hover,
+.social__link:hover {
+    cursor: pointer;
+    color: var(--strong-cyan);
 }
