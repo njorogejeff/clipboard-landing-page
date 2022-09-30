@@ -372,9 +372,9 @@ section {
 }
 
 /* Active States */
-/* TODO - Configure the social icon hover state */
 .site__link:hover,
-.social__link:hover {
+img.social__icon:hover {
     cursor: pointer;
     color: var(--strong-cyan);
+    filter: invert(55%) sepia(79%) saturate(380%) hue-rotate(121deg) brightness(94%) contrast(94%);
 }
